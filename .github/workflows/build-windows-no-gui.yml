@@ -1,4 +1,4 @@
-name: Build CLI-Only Client - Windows 10
+name: Build Headless Client - Windows 10
 
 on:
   workflow_dispatch:
