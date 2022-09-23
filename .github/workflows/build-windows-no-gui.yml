@@ -104,7 +104,7 @@ jobs:
       run: |
         .\Install.ps1 -d
 
-    - name: Build Windows binaries with build_scripts\build_windows-cli-only.ps1
+    - name: Build Windows binaries with build_scripts\build_windows-no-gui.ps1
       env:
         CHIA_VERSION: ${{ steps.version_number.outputs.CHIA_VERSION }}
       run: |
