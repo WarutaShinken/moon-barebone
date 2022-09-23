@@ -117,5 +117,5 @@ jobs:
     - name: Upload Windows exe's to artifacts
       uses: actions/upload-artifact@v3
       with:
-        name: lch-win-x64-cli
+        name: moc-win-x64-cli
         path: ${{ github.workspace }}\Chia-win32-x64\
