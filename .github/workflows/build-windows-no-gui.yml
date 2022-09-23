@@ -112,7 +112,7 @@ jobs:
         $env:path="C:\Program` Files` (x86)\Windows` Kits\10\App` Certification` Kit;$env:path"
         .\venv\Scripts\Activate.ps1
         cd .\build_scripts
-        .\build_windows-cli-only.ps1
+        .\build_windows-no-gui.ps1
 
     - name: Upload Windows exe's to artifacts
       uses: actions/upload-artifact@v3
