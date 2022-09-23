@@ -69,7 +69,7 @@ class WalletRpcApi:
     def __init__(self, wallet_node: WalletNode):
         assert wallet_node is not None
         self.service = wallet_node
-        self.service_name = "chia_wallet"
+        self.service_name = "moon_wallet"
         self.balance_cache: Dict[int, Any] = {}
 
     def get_routes(self) -> Dict[str, Endpoint]:

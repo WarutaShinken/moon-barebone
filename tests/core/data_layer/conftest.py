@@ -64,7 +64,7 @@ def closing_chia_root_popen(chia_root: ChiaRoot, args: List[str]) -> Iterator[No
                 process.kill()
 
 
-@pytest.fixture(name="chia_daemon", scope="function")
+@pytest.fixture(name="moon_daemon", scope="function")
 def chia_daemon_fixture(chia_root: ChiaRoot) -> Iterator[None]:
     with closing_chia_root_popen(chia_root=chia_root, args=[sys.executable, "-m", "chia.daemon.server"]):
         # TODO: this is not pretty as a hard coded time

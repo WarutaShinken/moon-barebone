@@ -85,16 +85,16 @@ if getattr(sys, "frozen", False):
         "chia": "chia",
         "chia_data_layer": "start_data_layer",
         "chia_data_layer_http": "start_data_layer_http",
-        "chia_wallet": "start_wallet",
-        "chia_full_node": "start_full_node",
-        "chia_harvester": "start_harvester",
-        "chia_farmer": "start_farmer",
-        "chia_introducer": "start_introducer",
-        "chia_timelord": "start_timelord",
-        "chia_timelord_launcher": "timelord_launcher",
-        "chia_full_node_simulator": "start_simulator",
-        "chia_seeder": "start_seeder",
-        "chia_crawler": "start_crawler",
+        "moon_wallet": "start_wallet",
+        "moon_full_node": "start_full_node",
+        "moon_harvester": "start_harvester",
+        "moon_farmer": "start_farmer",
+        "moon_introducer": "start_introducer",
+        "moon_timelord": "start_timelord",
+        "moon_timelord_launcher": "timelord_launcher",
+        "moon_full_node_simulator": "start_simulator",
+        "moon_seeder": "start_seeder",
+        "moon_crawler": "start_crawler",
     }
 
     def executable_for_service(service_name: str) -> str:
@@ -1330,7 +1330,7 @@ async def async_run_daemon(root_path: Path, wait_for_unlock: bool = False) -> in
     # since it might be necessary to wait for the GUI to unlock the keyring first.
     chia_init(root_path, should_check_keys=(not wait_for_unlock))
     config = load_config(root_path, "config.yaml")
-    setproctitle("chia_daemon")
+    setproctitle("moon_daemon")
     initialize_logging("daemon", config["logging"], root_path)
     crt_path = root_path / config["daemon_ssl"]["private_crt"]
     key_path = root_path / config["daemon_ssl"]["private_key"]
