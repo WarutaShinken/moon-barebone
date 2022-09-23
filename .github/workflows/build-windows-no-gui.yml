@@ -10,7 +10,7 @@ concurrency:
 
 jobs:
   build:
-    name: Windows 10 CLI Binaries
+    name: Windows 10 Headless Binaries
     runs-on: [windows-2019]
     timeout-minutes: 50
     strategy:
@@ -117,5 +117,5 @@ jobs:
     - name: Upload Windows exe's to artifacts
       uses: actions/upload-artifact@v3
       with:
-        name: moc-win-x64-cli
+        name: moc-win-x64-headless
         path: ${{ github.workspace }}\Chia-win32-x64\

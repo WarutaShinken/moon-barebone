@@ -21,7 +21,7 @@ pyinstaller --log-level INFO $SPEC_FILE
 
 git status
 
-# Change to the CLI directory
+# Change to the backend directory
 Set-Location -Path "dist\daemon" -PassThru
 
 Write-Output "   ---"
@@ -45,5 +45,5 @@ Write-Output "   ---"
 Copy-Item "." -Destination "$env:GITHUB_WORKSPACE\Chia-win32-x64" -Recurse
 
 Write-Output "   ---"
-Write-Output "Windows CLI Binaries complete"
+Write-Output "Windows Headless Binaries complete"
 Write-Output "   ---"
