@@ -18,8 +18,8 @@ from typing import Any, List, Optional, Tuple, Type, Union
 # the new passphrase.
 DEFAULT_PASSPHRASE_IF_NO_MASTER_PASSPHRASE = "$ chia passphrase set # all the cool kids are doing it!"
 
-MASTER_PASSPHRASE_SERVICE_NAME = "Chia Passphrase"
-MASTER_PASSPHRASE_USER_NAME = "Chia Passphrase"
+MASTER_PASSPHRASE_SERVICE_NAME = "Moon Passphrase"
+MASTER_PASSPHRASE_USER_NAME = "Moon Passphrase"
 
 
 LegacyKeyring = Union[MacKeyring, WinKeyring, CryptFileKeyring]
